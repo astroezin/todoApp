@@ -19,9 +19,9 @@ label{
   height: 100vh;
   margin: auto;
   text-align: center;
-  background-color: #f8f9fa;
-  border: 2px solid rgba(0,0,0,.125);
-  box-shadow: 0 .25rem .75rem rgba(0,0,0,.15) !important;
+  /* background-color: #f8f9fa; */
+  /* border: 2px solid rgba(0,0,0,.125);
+  box-shadow: 0 .25rem .75rem rgba(0,0,0,.15) !important; */
   }
   form{
     display: flex;
