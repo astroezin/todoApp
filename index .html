@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TODO PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>TODO APP</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="margin-top: 60px;  border: 1px solid #302f2f ;    padding: 10px ">
+                <form id="todoForm" name="todoForm" class="form">
+                    <div class="form-group">
+                        <label for="taskTitle">Title:</label>
+                        <input type="text" class="form-control" id="taskTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <input type="text" class="form-control" id="description" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Priority:</label>
+                        <select class="form-control" id="priority" required>
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select class="form-control" id="category" required>
+                            <option value="personal">Personal</option>
+                            <option value="office">Office</option>
+                            <option value="school">School</option>
+                        </select>
+                    </div>
+                    <button type="button" class="button" onclick="addTask()">Add Task</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>To Do Task</h2>
+                <div class="form-group">
+                    <label for="showCategory">Category:</label>
+                    <select class="form-control" id="showCategory" name="showCategory">
+                        <option value="all">All</option>
+                        <option value="personal">Personal</option>
+                        <option value="office">Office</option>
+                        <option value="school">School</option>
+                    </select>
+                
+                
+                    <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+                </div>
+                <table id="taskTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>SN</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Priority</th>
+                            <th>Completed</th>
+                            <th>Edit</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="todo-list">
+                        <!-- Tasks will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

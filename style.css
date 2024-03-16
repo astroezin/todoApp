@@ -1,0 +1,105 @@
+/* *{
+    background: #100720;
+} */
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    text-align: center;
+}
+label{
+    width: 150px;
+    text-align: left;
+}
+.container {
+  width: 200vh !important;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  background-color: #f8f9fa;
+  border: 2px solid rgba(0,0,0,.125);
+  box-shadow: 0 .25rem .75rem rgba(0,0,0,.15) !important;
+  }
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+.form-control {
+    border: 1px solid #302f2f !important;
+    width: 200px !important; 
+    height: max-content;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 12px !important;
+    align-items: center;
+    justify-content: center;
+    
+}
+input{
+    margin-left: 50px;
+}
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;    
+}
+.grouping{
+    display: flex;
+}
+
+#taskTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  #taskTable td, #taskTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #taskTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #taskTable tr:hover {background-color: #ddd;}
+  
+  #taskTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+button{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,94,247,1)17.8%, rgba(2,245,255,1)100.2%);
+}
+button::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,94,247,1)17.8%, rgba(2,245,255,1)100.2%);
+    filter: blur(15px);
+    z-index:  -1;
+    position: relative;
+    
+}
+button:active{
+    transform: scale(0.9) rotate(3deg);
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,94,247,1)17.8%, rgba(2,245,255,1)100.2%);
+    transition: 0.5s;
+
+}
